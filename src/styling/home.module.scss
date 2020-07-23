@@ -1,0 +1,54 @@
+$fauna: rgb(0, 0, 0);
+$flora: rgb(0, 0, 0);
+
+.container {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  @mixin myContainer($color, $url) {
+    width: 50%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.05s;
+    height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      opacity: 1;
+      text-decoration: none;
+      color: rgb(58, 17, 17);
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      font-family: Broadway;
+
+      font-size: 100px;
+      color: rgb(35, 21, 46);
+      a{
+        color: rgb(35, 21, 46);
+      }
+    }
+    /*.linkContainer {
+     //height: 70px;
+     // width: fit-content;
+     // background-color: white;
+     // padding: px;
+      //border-radius: 10px;
+
+      
+    }*/
+  }
+  .faunaContainer {
+    @include myContainer($fauna, "../media/monet.jpg");
+  }
+  .floraContainer {
+    @include myContainer($flora, "../media/scc.jpg");
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+   // flex-direction: column;
+  // justify-content: flex-start;
+ 
+    width: 90%;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+   
+  }
+
+.galery {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    
+  }

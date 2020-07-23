@@ -1,0 +1,66 @@
+$default: rgb(0, 0, 0);
+
+.container {
+  height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  @mixin myContainer($color, $url) {
+    width: 20%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.05s;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      opacity: 1;
+      text-decoration: none;
+      color: rgb(58, 17, 17);
+      font-weight: 500;
+      letter-spacing: 0.50px;
+      font-family: Broadway;
+     
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+
+
+      font-size: 50px;
+      color: rgb(35, 21, 46);
+      a{
+        color: rgb(35, 21, 46);;
+      }
+    }
+    /*.linkContainer {
+     //height: 70px;
+     // width: fit-content;
+     // background-color: white;
+     // padding: px;
+      //border-radius: 10px;
+
+      
+    }*/
+  }
+  .goghContainer {
+    @include myContainer($default, "../media/vangoghwall.jpg");
+  }
+  .monetContainer {
+    @include myContainer($default, "../media/monetwall.jpg");
+  }
+  .picassoContainer {
+    @include myContainer($default, "../media/picassowall.jpg");
+  }
+  .davinciContainer {
+    @include myContainer($default, "../media/davinciwall.jpg");
+  }
+  .gustavContainer {
+    @include myContainer($default, "../media/gustavwall.jpg");
+  }
+}

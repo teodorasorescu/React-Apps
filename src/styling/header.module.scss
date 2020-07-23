@@ -1,0 +1,21 @@
+
+
+.container {
+  height: 100px;
+  width: 100vw;
+
+  //background-color: rgb(204, 204, 231);
+  background-color: rgb(233, 225, 217);
+  display: flex;
+  flex-direction: row; //default value
+  align-items: center;
+  justify-content: space-evenly;
+
+  .link {
+    text-decoration: none;
+    font-family: Broadway;
+    color:  rgb(35, 21, 46);
+    font-weight: 200;
+    letter-spacing: 0.6px;
+  }
+}
